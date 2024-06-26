@@ -1,0 +1,11 @@
+{
+  "name": "keystone-101",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "keystone dev",
+    "start": "keystone start",
+    "build": "keystone build",
+    "postinstall": "keystone postinstall --fix"
+  }
+}

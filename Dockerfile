@@ -8,6 +8,9 @@ COPY keystone.ts .
 RUN yarn add @keystone-6/core && \
     yarn add typescript
 
+RUN yarn build
+RUN yarn keystone prisma db push
+
 EXPOSE 3000
 
-CMD ["yarn", "dev"]
+CMD ["yarn", "start"]
